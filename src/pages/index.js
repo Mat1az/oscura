@@ -38,57 +38,57 @@ const IndexPage = () => {
                         </div>
                         <div className='column is-7'>
                             <Card title='Music Player' content={
-                                <div className='columns is-centered has-text-centered'>
-                                    <div className='column is-10'>
-                                        <Cassette></Cassette>
-                                        <audio autoPlay="autoplay" controls="controls" src={state.streaming + '/;'}/>
-                                    </div>
-                                </div>
+                                <>
+                                    <Cassette></Cassette>
+                                    <audio autoPlay="autoplay" controls="controls" src={state.streaming + '/;'}/>
+                                </>
                             }
-                            />
-                        </div>
-                        <div className='column is-2'>
-                            <div className='columns is-multiline'>
-                                <div className='column social-media'>
-                                    <Card title='Síguenos' content={
-                                        <React.Fragment>
-                                            {state.sm.map((v) => (
-                                                <a href={v.url} target="_blank" rel="noreferrer">
-                                                    <img src={require(`../images/ico/${v.img}`).default} alt="" className="img-circle"/>
-                                                </a>
-                                            ))}
-                                            <TwitterFollowButton screenName={'Radioscura'}/>
-                                        </React.Fragment>
-                                    }
-                                    />
-                                </div>
-                                <div className='column social-media'>
-                                    <Card title='Escúchanos' content={
-                                        <React.Fragment>
-                                            {state.sm.map((v) => (
-                                                <a href={v.url} target='_blank' rel="noreferrer">
-                                                    <img alt="" className="img-circle" src={require(`../images/ico/${v.img}`).default}/>
-                                                </a>
-                                            ))}
-                                            <TwitterFollowButton screenName={'Radioscura'}/>
-                                        </React.Fragment>
-                                    }
-                                    />
-                                </div>
+                        />
+                    </div>
+                    <div className='column is-2'>
+                        <div className='columns is-multiline'>
+                            <div className='column social-media'>
+                                <Card title='Síguenos' content={
+                                    <React.Fragment>
+                                        {state.sm.map((v) => (
+                                            <a href={v.url} target="_blank" rel="noreferrer">
+                                                <img src={require(`../images/ico/${v.img}`).default} alt=""
+                                                     className="img-circle"/>
+                                            </a>
+                                        ))}
+                                        <TwitterFollowButton screenName={'Radioscura'}/>
+                                    </React.Fragment>
+                                }
+                                />
+                            </div>
+                            <div className='column social-media'>
+                                <Card title='Escúchanos' content={
+                                    <React.Fragment>
+                                        {state.sm.map((v) => (
+                                            <a href={v.url} target='_blank' rel="noreferrer">
+                                                <img alt="" className="img-circle"
+                                                     src={require(`../images/ico/${v.img}`).default}/>
+                                            </a>
+                                        ))}
+                                        <TwitterFollowButton screenName={'Radioscura'}/>
+                                    </React.Fragment>
+                                }
+                                />
                             </div>
                         </div>
-                        <div className='column is-12'>
-                            <Card title='Apoyo' content={
-                                <b>Si te gusta la música, considera seguirnos.</b>
-                            }
-                            />
-                        </div>
+                    </div>
+                    <div className='column is-12'>
+                        <Card title='Apoyo' content={
+                            <b>Si te gusta la música, considera seguirnos.</b>
+                        }
+                        />
                     </div>
                 </div>
-                <div className='column is-2'></div>
-            </main>
         </div>
-    )
+    <div className='column is-2'></div>
+</main>
+</div>
+)
 }
 
 export default IndexPage

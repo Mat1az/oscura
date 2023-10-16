@@ -1,7 +1,13 @@
 #tape {
+  @media (min-width: 1920px) {
+    margin-inline: 10%;
+  }
   background: rgba(0, 0, 0, 1);
   /*width: 60%;*/
-  height: 290px;
+  height: 270px;
+  @media (min-width: 1920px) {
+    height: 290px;
+  }
   border-radius: 10px;
   position: relative;
   /*top: 50%;
