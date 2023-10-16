@@ -54,7 +54,7 @@ const IndexPage = () => {
                                         <React.Fragment>
                                             {state.sm.map((v) => (
                                                 <a href={v.url} target="_blank" rel="noreferrer">
-                                                    <img src={`/ico/${v.img}`} alt="" className="img-circle"/>
+                                                    <img src={require(`../images/ico/${v.img}`).default} alt="" className="img-circle"/>
                                                 </a>
                                             ))}
                                             <TwitterFollowButton screenName={'Radioscura'}/>
@@ -67,7 +67,7 @@ const IndexPage = () => {
                                         <React.Fragment>
                                             {state.sm.map((v) => (
                                                 <a href={v.url} target='_blank' rel="noreferrer">
-                                                    <img alt="" className="img-circle" src={`/ico/${v.img}`}/>
+                                                    <img alt="" className="img-circle" src={require(`../images/ico/${v.img}`).default}/>
                                                 </a>
                                             ))}
                                             <TwitterFollowButton screenName={'Radioscura'}/>
