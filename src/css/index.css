@@ -1,0 +1,32 @@
+body {
+  overflow: hidden;
+  background-image: url("../images/bg-body.jpg");
+  color: #ffffff !important;
+}
+
+.App main {
+  padding-top: 9%;
+  padding-bottom: 9%;
+}
+
+.card {
+  background-image: url("../images/card-bg.png");
+}
+
+.card-header {
+  background-image: url("../images/card-header.png");
+}
+
+.card .card-header-title {
+  color:#FF9E00;
+}
+
+.social-media a .img-circle {
+  width: 30%;
+  padding-inline: 2%;
+}
+
+audio {
+  width: 100%;
+  margin-top: 5%
+}
