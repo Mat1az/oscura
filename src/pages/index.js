@@ -64,13 +64,12 @@ const IndexPage = () => {
                             <div className='column social-media'>
                                 <Card title='Escúchanos' content={
                                     <React.Fragment>
-                                        {state.sm.map((v) => (
+                                        {state.mp.map((v) => (
                                             <a href={v.url} target='_blank' rel="noreferrer">
                                                 <img alt="" className="img-circle"
                                                      src={require(`../images/ico/${v.img}`).default}/>
                                             </a>
                                         ))}
-                                        <TwitterFollowButton screenName={'Radioscura'}/>
                                     </React.Fragment>
                                 }
                                 />
